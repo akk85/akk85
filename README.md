@@ -10,7 +10,7 @@
 ---
 
 ### 🚀 About Me
-I’m a **Bachelor of Science in Electrical and Computer Engineering** student at **Cornell University**, minoring in **Robotics**. I’m passionate about **embedded systems**, **robotics**, and **hardware-software integration**. I thrive on solving complex problems and building efficient, real-time systems.
+I’m a **Bachelor of Science in Electrical and Computer Engineering** fourth year student at **Cornell University**, minoring in **Robotics**. I’m passionate about **embedded systems**, **robotics**, and **hardware-software integration**. I thrive on solving complex problems and building efficient, real-time systems.
 
 - 🔭 **Currently**: Embedded Systems Intern at Analytitech, optimizing sports tracking technology and integrating YOLO object detection.
 - 🌱 **Learning**: Advanced robotics algorithms, GPU acceleration, and Software development.
