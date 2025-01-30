@@ -50,16 +50,6 @@ I’m a **Bachelor of Science in Electrical and Computer Engineering** student a
 
 ---
 
-### 💼 Experience
-
-#### **Embedded Software Engineer Intern** @ [Analytitech](https://analytitech.com) | *May 2024 - Aug 2024*
-- Optimized software performance, reducing frame processing time by **30% (200ms)**.
-- Integrated **YOLO object detection** for 99% real-time analysis efficiency.
-- Designed a custom PCB, reducing production costs by **92%**.
-- Offloaded CPU tasks to GPU, increasing system efficiency by **68%**.
-
-
----
 
 ### 📊 GitHub Stats
 
