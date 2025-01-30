@@ -53,7 +53,7 @@ I’m a **Bachelor of Science in Electrical and Computer Engineering** student a
 
 ### 📊 GitHub Stats
 
-![Tony's GitHub Stats](https://github-readme-stats.vercel.app/api?username=tonykariuki&show_icons=true&theme=radical)
+![Tony's GitHub Stats](https://github-readme-stats.vercel.app/api?username=akk85&show_icons=true&theme=radical)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tonykariuki&layout=compact&theme=radical)
 
