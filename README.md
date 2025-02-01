@@ -54,7 +54,7 @@ I’m a **Bachelor of Science in Electrical and Computer Engineering** fourth ye
 
 ### 📊 GitHub Stats
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=akk85&layout=compact&theme=radical)
+![Top Languages](github-stats.svg)
 
 ---
 
