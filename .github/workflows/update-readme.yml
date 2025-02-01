@@ -24,7 +24,9 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main || git reset --hard origin/main  # avoid merge conflicts
-          git add -f github-stats.svg  # force add in case it's ignored
+          git pull --rebase origin main || git reset --hard origin/main  # ensure we are up-to-date
+          git add -f github-stats.svg  # force add the file
+          git status  # debug step: check if git sees the file
           git commit -m "update github stats" || echo "No changes to commit"
           git push origin main
+
