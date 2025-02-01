@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Tony K. Kariuki
 
-### Embedded Systems Engineer | Robotics Enthusiast | Cornell ECE '25
+### Embedded Software Engineer | Robotics Enthusiast | Cornell ECE '25
 
 [![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:akk85@cornell.edu)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/antony-kariuki/)
