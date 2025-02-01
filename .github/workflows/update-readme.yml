@@ -24,7 +24,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
-          git add -f github-stats.svg
-          git diff --quiet && echo "No changes to commit" || git commit -m "update github stats"
+          git pull --rebase origin main || git reset --hard origin/main  # avoid merge conflicts
+          git add -f github-stats.svg  # force add in case it's ignored
+          git commit -m "update github stats" || echo "No changes to commit"
           git push origin main
