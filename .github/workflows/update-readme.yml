@@ -12,17 +12,19 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Generate GitHub Stats
         run: |
           curl -o github-stats.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=${{ github.actor }}&layout=compact&theme=radical&count_private=true&token=${{ secrets.GH_STATS_TOKEN }}"
+          ls -la  # debug: list files
 
-- name: Commit and Push
-  run: |
-    git config --global user.name "github-actions[bot]"
-    git config --global user.email "github-actions[bot]@users.noreply.github.com"
-    git pull --rebase origin main || git reset --hard origin/main  # avoid merge conflicts
-    git add -f github-stats.svg  # force add in case it's ignored
-    git commit -m "update github stats" || echo "No changes to commit"
-    git push origin main
-
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || git reset --hard origin/main  # avoid merge conflicts
+          git add -f github-stats.svg  # force add in case it's ignored
+          git commit -m "update github stats" || echo "No changes to commit"
+          git push origin main
