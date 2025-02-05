@@ -53,7 +53,7 @@ I’m a **Bachelor of Science in Electrical and Computer Engineering** fourth ye
 
 ### 📊 GitHub Stats
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=akk85&show_icons=true&theme=radical&count_private=true)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=akk85&theme=radical)
+![GitHub Streak](https://streak-stats.demolab.com/?user=akk85&theme=radical)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=akk85&layout=compact&theme=radical&count_private=true&hide=html,css)
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=akk85&theme=radical)
 ![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=akk85&theme=radical&no-frame=true&row=2&column=4)
