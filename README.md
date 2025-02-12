@@ -7,6 +7,9 @@
 [![Portfolio](https://img.shields.io/badge/-Portfolio-FF7139?style=flat&logo=firefox&logoColor=white)](https://www.tonykariuki.com/)
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/akk85)
 
+### Check out my Portfolio  
+[www.tonykariuki.com](https://www.tonykariuki.com)
+
 ---
 
 ### 🚀 About Me
