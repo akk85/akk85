@@ -12,7 +12,7 @@
 ### 🚀 About Me
 I’m a **Bachelor of Science in Electrical and Computer Engineering** fourth year student at **Cornell University**, minoring in **Robotics**. I’m passionate about **embedded systems**, **robotics**, and **hardware-software integration**. I thrive on solving complex problems and building efficient, real-time systems.
 
-- 🔭 **Currently**: Embedded Systems Intern at Analytitech, optimizing sports tracking technology and integrating YOLO object detection.
+- 🔭 **Currently**: Embedded Software Engineer at Analytitech, optimizing sports tracking technology and leveraging Artificial Intelligence to create an edge-based deep learning camera system. 
 - 🌱 **Learning**: Advanced robotics algorithms, GPU acceleration, and Software development.
 - 💡 **Interests**: Embedded systems, robotics, computer architecture, and IoT.
 - 📫 **Reach Me**: [Email](mailto:akk85@cornell.edu) | [LinkedIn](https://www.linkedin.com/in/antony-kariuki/)
