@@ -1,32 +1,29 @@
-name: Update GitHub Stats
+name: Daily Commit
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # runs daily at midnight
-  workflow_dispatch:  # allows manual trigger
+    - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
+  workflow_dispatch:      # Allows manual triggering too
 
 jobs:
-  update-readme:
+  commit:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
-      - name: Generate GitHub Stats
+      - name: Make dummy change
         run: |
-          curl -o github-stats.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=${{ github.actor }}&layout=compact&theme=radical&count_private=true&token=${{ secrets.GH_STATS_TOKEN }}"
-          ls -la  # debug: list files
+          echo "// 🤖 Updated on $(date)" >> update.md
 
-      - name: Commit and Push
+      - name: Configure Git
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main || git reset --hard origin/main  # ensure we are up-to-date
-          git add -f github-stats.svg  # force add the file
-          git status  # debug step: check if git sees the file
-          git commit -m "update github stats" || echo "No changes to commit"
-          git push origin main
+          git config user.name "Tony K"
+          git config user.email "akk85@cornell.edu"
 
+      - name: Commit and push
+        run: |
+          git add update.md
+          git commit -m "🔥 Daily commit to keep streak alive"
+          git push
