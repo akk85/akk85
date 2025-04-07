@@ -19,7 +19,7 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "Tony K"
+          git config user.name "Tony Kariuki"
           git config user.email "akk85@cornell.edu"
 
       - name: Commit and push
