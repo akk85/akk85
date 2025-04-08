@@ -25,5 +25,5 @@ jobs:
       - name: Commit and push
         run: |
           git add update.md
-          git commit -m "🔥 Daily commit to keep streak alive"
+          git commit -m "🔥 job commit incase of missed commit"
           git push
