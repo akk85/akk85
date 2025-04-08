@@ -24,7 +24,8 @@ jobs:
 
       - name: Make dummy change
         run: |
-          echo "// 🤖 Updated on $(date) - $RANDOM" >> update.md
+          mkdir -p .daily-log
+          echo "// 🤖 Updated on $(date) - $RANDOM" >> .daily-log/$(date +%Y-%m-%d).md
 
       - name: Configure Git
         run: |
