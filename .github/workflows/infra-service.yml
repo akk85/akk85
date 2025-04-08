@@ -34,8 +34,8 @@ jobs:
 
       - name: Commit and push
         run: |
-          git add update.md
-          git commit -m "🔥 Daily streak commit"
+          git add .daily-log/ update.md
+         git commit -m "🔥 Daily streak commit" || echo "No changes to commit"
           git push origin $PR_BRANCH
 
       - name: Create Pull Request
