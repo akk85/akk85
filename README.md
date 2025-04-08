@@ -10,8 +10,11 @@
 ### Check out my Portfolio  
 [www.tonykariuki.com](https://www.tonykariuki.com)
 
-### Email me 
+
+### 📫 Email Me  
 dev@tonykariuki.com
+
+**`while (!connected) {`** [**`sendEmail("dev@tonykariuki.com")`**](mailto:dev@tonykariuki.com) **`; }`**
 
 ---
 
@@ -21,7 +24,7 @@ I’m a **Bachelor of Science in Electrical and Computer Engineering** fourth ye
 - 🔭 **Currently**: Embedded Software Engineer at Analytitech, optimizing sports tracking technology and leveraging Artificial Intelligence to create an edge-based deep learning camera system. 
 - 🌱 **Learning**: Advanced robotics algorithms, GPU acceleration, and Software development.
 - 💡 **Interests**: Embedded systems, robotics, computer architecture, and IoT.
-- 📫 **Reach Me**: [Email](mailto:akk85@cornell.edu) | [LinkedIn](https://www.linkedin.com/in/antony-kariuki/)
+- 📫 **Reach Me**: [Email](mailto:dev@tonykariuki.com) | [LinkedIn](https://www.linkedin.com/in/antony-kariuki/)
 
 ---
 
@@ -50,24 +53,29 @@ I’m a **Bachelor of Science in Electrical and Computer Engineering** fourth ye
 ![LTspice](https://img.shields.io/badge/-LTspice-FF6600?logo=spiceworks&logoColor=white)
 
 #### Protocols
-![I2C](https://img.shields.io/badge/-I2C-000000?logo=i2c&logoColor=white)
-![SPI](https://img.shields.io/badge/-SPI-000000?logo=spi&logoColor=white)
-![CAN](https://img.shields.io/badge/-CAN-000000?logo=can&logoColor=white)
-![TCP/IP](https://img.shields.io/badge/-TCP/IP-000000?logo=tcpip&logoColor=white)
+![I2C](https://img.shields.io/badge/I2C-Communication-informational)
+![SPI](https://img.shields.io/badge/SPI-Communication-informational)
+![CAN](https://img.shields.io/badge/CAN-Bus-informational)
+![TCP/IP](https://img.shields.io/badge/TCP/IP-Networking-informational)
+
 
 ---
 
 ### 📊 GitHub Stats
 ![GitHub Streak](https://streak-stats.demolab.com/?user=akk85&theme=radical)
+![](https://github-readme-stats.vercel.app/api?username=akk85&theme=radical&hide_border=false&include_all_commits=true)<br/>
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=akk85&layout=compact&theme=radical&count_private=true&hide=html,css)
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=akk85&theme=radical)
+
+## 🏆 GitHub Trophies
 ![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=akk85&theme=radical&no-frame=true&row=2&column=4)
+
+
 
 ---
 
 ### 🌟 Let's Connect!
 I’m always open to collaborating on **embedded systems**, **robotics**, or **open-source projects**. Feel free to reach out!
 
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:akk85@cornell.edu)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:dev@tonykariuki.com)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/antony-kariuki/)
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/akk85)
