@@ -1,4 +1,4 @@
-name: Daily Commit
+name: Cronjob Commit
 
 on:
   schedule:
@@ -30,25 +30,16 @@ jobs:
         run: |
           git checkout -b $BRANCH
           git add update.md
-          git commit -m "🔥 cronjob"
+          git commit -m "🔥 Daily streak commit"
           git push origin $BRANCH
 
       - name: Create Pull Request
-        id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ env.BRANCH }}
           title: "📌 Daily Update - ${{ env.BRANCH }}"
           body: |
-            This automated PR was created to maintain streak activity and boost PR contributions.
+            Automated PR for daily contribution. Please review and merge when ready.
           base: main
-          delete-branch: true  # auto-delete branch after merge
-
-      - name: Enable Auto-Merge
-        if: steps.cpr.outputs.pull-request-number != ''
-        uses: "peter-evans/enable-pull-request-automerge@v3"
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-          merge-method: squash
+          delete-branch: true  # This will delete the branch after you manually merge the PR
