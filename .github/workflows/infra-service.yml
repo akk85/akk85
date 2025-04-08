@@ -1,31 +1,21 @@
-name: Daily Commit
+name: auto cronjob
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
+  workflow_dispatch:      # Allows manual triggering too
 
 jobs:
   commit:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout base branch (tony-dev)
+      - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          ref: tony-dev
-
-      - name: Set PR branch name
-        run: echo "PR_BRANCH=tony-pr-$(date +'%Y-%m-%d')" >> $GITHUB_ENV
-
-      - name: Create new branch
-        run: |
-          git checkout -b $PR_BRANCH
 
       - name: Make dummy change
         run: |
-          mkdir -p .daily-log
-          echo "// 🤖 Updated on $(date) - $RANDOM" >> .daily-log/$(date +%Y-%m-%d).md
+          echo "// 🤖 Updated on $(date)" >> update.md
 
       - name: Configure Git
         run: |
@@ -34,17 +24,6 @@ jobs:
 
       - name: Commit and push
         run: |
-          git add .daily-log/ update.md
-          git commit -m "🔥 Daily streak commit" || echo "No changes to commit"
-          git push -f origin $PR_BRANCH
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ env.PR_BRANCH }}
-          base: main
-          title: "📌 Daily Update - ${{ env.PR_BRANCH }}"
-          body: |
-            Automated daily PR from ${{ env.PR_BRANCH }} to main.
-          delete-branch: false
+          git add update.md
+          git commit -m "🔥 job commit incase of missed commit"
+          git push
