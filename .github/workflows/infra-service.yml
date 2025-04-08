@@ -1,8 +1,8 @@
-name: Cronjob Commit
+name: Daily Commit
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Every day at 00:00 UTC
+    - cron: '0 0 * * *'  # Runs daily at 00:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -10,12 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout tony-dev branch
         uses: actions/checkout@v3
-
-      - name: Set up branch name
-        id: vars
-        run: echo "BRANCH=daily-update-$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+        with:
+          ref: tony-dev  # Always work from this persistent branch
 
       - name: Make dummy change
         run: |
@@ -26,20 +24,20 @@ jobs:
           git config user.name "Tony Kariuki"
           git config user.email "akk85@cornell.edu"
 
-      - name: Commit and push to new branch
+      - name: Commit and push
         run: |
-          git checkout -b $BRANCH
           git add update.md
-          git commit -m "🔥 Daily streak commit"
-          git push origin $BRANCH
+          git commit -m "🔥 Daily streak commit" || echo "No changes to commit"
+          git push origin tony-dev
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ env.BRANCH }}
-          title: "📌 Daily Update - ${{ env.BRANCH }}"
-          body: |
-            Automated PR for daily contribution. Please review and merge when ready.
+          branch: tony-dev
           base: main
-          delete-branch: true  # This will delete the branch after you manually merge the PR
+          title: "📌 Daily Update"
+          body: |
+            This automated PR was created from the `tony-dev` branch.
+            Review and merge when ready to keep the streak and PR count going!
+          delete-branch: false  # We want to keep reusing tony-dev
