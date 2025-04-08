@@ -36,7 +36,7 @@ jobs:
         run: |
           git add .daily-log/ update.md
           git commit -m "🔥 Daily streak commit" || echo "No changes to commit"
-          git push origin $PR_BRANCH
+          git push -f origin $PR_BRANCH
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
