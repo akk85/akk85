@@ -19,7 +19,7 @@ jobs:
 
       - name: Make dummy change
         run: |
-          echo "// 🤖 Updated on $(date)" >> update.md
+          echo "// 🤖 Updated on $(date) - $RANDOM" >> update.md
 
       - name: Configure Git
         run: |
