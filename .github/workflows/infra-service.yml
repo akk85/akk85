@@ -1,0 +1,54 @@
+name: Daily Commit
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Every day at 00:00 UTC
+  workflow_dispatch:
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up branch name
+        id: vars
+        run: echo "BRANCH=daily-update-$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Make dummy change
+        run: |
+          echo "// 🤖 Updated on $(date)" >> update.md
+
+      - name: Configure Git
+        run: |
+          git config user.name "Tony Kariuki"
+          git config user.email "akk85@cornell.edu"
+
+      - name: Commit and push to new branch
+        run: |
+          git checkout -b $BRANCH
+          git add update.md
+          git commit -m "🔥 cronjob"
+          git push origin $BRANCH
+
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ env.BRANCH }}
+          title: "📌 Daily Update - ${{ env.BRANCH }}"
+          body: |
+            This automated PR was created to maintain streak activity and boost PR contributions.
+          base: main
+          delete-branch: true  # auto-delete branch after merge
+
+      - name: Enable Auto-Merge
+        if: steps.cpr.outputs.pull-request-number != ''
+        uses: "peter-evans/enable-pull-request-automerge@v3"
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: squash
