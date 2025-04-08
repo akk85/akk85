@@ -10,6 +10,9 @@
 ### Check out my Portfolio  
 [www.tonykariuki.com](https://www.tonykariuki.com)
 
+### Email me 
+dev@tonykariuki.com
+
 ---
 
 ### 🚀 About Me
