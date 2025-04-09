@@ -1,29 +1,29 @@
-name: auto cronjob
+name: "Daily Maintenance"
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
-  workflow_dispatch:      # Allows manual triggering too
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   commit:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Make dummy change
-        run: |
-          echo "// 🤖 Updated on $(date)" >> update.md
+      - name: Touch hidden file
+        run: touch .keep
 
       - name: Configure Git
         run: |
           git config user.name "Tony Kariuki"
-          git config user.email "akk85@cornell.edu"
+          git config user.email "dev@tonykariuki.com"
 
-      - name: Commit and push
+      - name: Random commit message + push
         run: |
-          git add update.md
-          git commit -m "🔥 job commit incase of missed commit"
+          COMMIT_MSGS=("minor update" "refactor" "tweak" "fix typo" "update logs")
+          MSG=${COMMIT_MSGS[$RANDOM % ${#COMMIT_MSGS[@]}]}
+          git add .keep
+          git commit -m "$MSG"
           git push
