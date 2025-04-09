@@ -8,19 +8,20 @@ on:
 jobs:
   commit:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Touch hidden file
-        run: touch .keep
+      - name: Modify .keep with timestamp
+        run: echo "$(date)" >> .keep
 
       - name: Configure Git
         run: |
           git config user.name "Tony Kariuki"
           git config user.email "dev@tonykariuki.com"
 
-      - name: Random commit message + push
+      - name: Commit and push
         run: |
           COMMIT_MSGS=("minor update" "refactor" "tweak" "fix typo" "update logs")
           MSG=${COMMIT_MSGS[$RANDOM % ${#COMMIT_MSGS[@]}]}
