@@ -1,5 +1,7 @@
 # 👋 Hi, I'm Tony K. Kariuki
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=akk85&color=blue" alt="Profile views" /> </p>
+
 ### Embedded Software Engineer | Robotics Enthusiast | Cornell ECE '25
 
 [![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:akk85@cornell.edu)
