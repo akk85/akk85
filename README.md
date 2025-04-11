@@ -69,8 +69,7 @@ I’m a **Bachelor of Science in Electrical and Computer Engineering** fourth ye
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=akk85&layout=compact&theme=radical&count_private=true&hide=html,css)
 
 ## 🏆 GitHub Trophies
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=akk85&theme=radical&no-frame=true&row=2&column=4)
-![](https://github-profile-trophy.vercel.app/?username=akk85&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=akk85&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
 
 ---
