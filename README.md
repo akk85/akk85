@@ -70,7 +70,7 @@ I’m a **Bachelor of Science in Electrical and Computer Engineering** fourth ye
 
 ## 🏆 GitHub Trophies
 ![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=akk85&theme=radical&no-frame=true&row=2&column=4)
-
+![](https://github-profile-trophy.vercel.app/?username=akk85&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
 
 ---
