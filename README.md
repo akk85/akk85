@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Tony K. Kariuki
+# 👋 Hi, I'm Tony Kariuki
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=akk85&color=blue" alt="Profile views" /> </p>
 
